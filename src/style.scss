@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  color: #000;
+  background-color: #fff;
+}
