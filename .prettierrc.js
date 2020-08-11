@@ -7,4 +7,12 @@ module.exports = {
   trailingComma: 'all',
   bracketSpacing: true,
   arrowParens: 'always',
+  overrides: [
+    {
+      files: ['*.html'],
+      options: {
+        printWidth: 120,
+      },
+    },
+  ],
 };
