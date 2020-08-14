@@ -4,7 +4,7 @@
   "description": "test-repo",
   "main": "index.js",
   "scripts": {
-    "test:style": "stylelint \"src/**/*.scss\" --syntax=scss",
+    "stylelint-check": "stylelint-config-prettier-check",
     "stylelint": "stylelint '**/*{.css,.scss}'",
     "stylelint:fix": "stylelint '**/*{.css,.scss}' --fix"
   },

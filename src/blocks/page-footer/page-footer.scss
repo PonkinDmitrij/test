@@ -1,0 +1,14 @@
+.page-footer {
+  min-height: 80px;
+  padding: 20px 0;
+  background-color: $dark-primary-color;
+
+  &__inner {
+    @include container();
+  }
+
+  &__copyright {
+    font-size: $font-size-sm;
+    text-align: right;
+  }
+}

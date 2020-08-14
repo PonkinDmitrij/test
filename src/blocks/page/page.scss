@@ -1,0 +1,48 @@
+.page {
+  box-sizing: border-box;
+  min-width: 320px;
+  min-height: 100%;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  &__content {
+    flex-grow: 1;
+    overflow-x: hidden;
+  }
+
+  &__footer-wrapper {
+    flex-shrink: 0;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  word-break: break-word;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: left;
+  color: $primary-text-color;
+  background-color: $text-primary-color;
+}
+
+.hide-overflow {
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}

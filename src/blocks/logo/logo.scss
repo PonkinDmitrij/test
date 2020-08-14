@@ -1,0 +1,10 @@
+.logo {
+  display: block;
+  max-width: 250px;
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

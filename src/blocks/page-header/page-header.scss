@@ -1,0 +1,43 @@
+.page-header {
+  min-height: 100px;
+  padding: 20px 0;
+  background-color: $dark-primary-color;
+
+  &__inner {
+    @include container();
+    position: relative;
+  }
+
+  &__logo {
+    width: 200px;
+    margin: 0 auto;
+
+    @media (max-width: $screen-sm) {
+      width: 160px;
+    }
+
+    @media (max-width: $screen-xs) {
+      width: 120px;
+    }
+  }
+
+  &__btn-wrap {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+
+    @media (max-width: $screen-sm) {
+      position: static;
+      display: flex;
+      transform: initial;
+      margin-top: 20px;
+    }
+  }
+
+  &__btn {
+    @media (max-width: $screen-sm) {
+      margin: auto;
+    }
+  }
+}

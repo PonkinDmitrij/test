@@ -1,0 +1,7 @@
+.content {
+  transition: transform $sidebar-transition-time;
+
+  &--active {
+    transform: translateX($sidebar-width);
+  }
+}

@@ -1,0 +1,51 @@
+.main-nav {
+  max-width: 300px;
+  padding: 10px;
+  text-align: center;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: -1px;
+    border: 1px solid $divider-color;
+    padding: 14px;
+    font-size: $font-size-sm;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $accent-color;
+
+    &:hover,
+    &:focus {
+      color: $text-primary-color;
+      background-color: $default-primary-color;
+    }
+
+    &:active {
+      color: $text-primary-color;
+      background-color: $dark-primary-color;
+    }
+
+    &--active,
+    &--active:hover,
+    &--active:focus {
+      color: $primary-text-color;
+      background-color: transparent;
+    }
+  }
+
+  &--sidebar {
+    margin: 0 auto;
+    margin-top: 60px;
+
+    @media (max-width: $screen-sm) {
+      margin: 30px auto;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.messages {
+  position: fixed;
+  top: 5px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  padding: 0 10px;
+
+  @media (max-width: $screen-sm) {
+    right: 100px;
+    left: 100px;
+    align-items: center;
+  }
+
+  @media (max-width: $screen-xs) {
+    right: 0;
+    left: 0;
+  }
+
+  &__item {
+    position: relative;
+    width: 320px;
+    margin: 5px 0;
+    padding: 10px 15px;
+    line-height: 1.3em;
+    color: $primary-text-color;
+    background-color: $light-primary-color;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in;
+
+    @media (max-width: $screen-xs) {
+      max-width: 300px;
+    }
+
+    &--success {
+      background-color: $color-success;
+    }
+
+    &--danger {
+      background-color: $color-danger;
+    }
+
+    &--warning {
+      background-color: $color-warning;
+    }
+
+    &--hide {
+      opacity: 0;
+    }
+  }
+
+  &__item-content {
+    padding-right: 27px;
+  }
+
+  &__item-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 12px;
+    height: 12px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px $custom-focus-color;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      right: -1px;
+      display: block;
+      width: 15px;
+      border-top: solid 2px $text-primary-color;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(135deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      border-color: $secondary-text-color;
+    }
+  }
+}

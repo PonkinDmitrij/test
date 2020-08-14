@@ -1,0 +1,45 @@
+.article {
+  &__title {
+    margin: 0;
+  }
+
+  &__collapse {
+    all: inherit;
+    position: relative;
+    width: 100%;
+    padding-right: 30px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 24px;
+      height: 24px;
+      margin-top: -12px;
+      background-image: url('../blocks/article/img/add.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:focus::before {
+      box-shadow: 0 0 0 3px $custom-focus-color;
+    }
+
+    &--open {
+      &::before {
+        background-image: url('../blocks/article/img/remove.svg');
+      }
+    }
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+
+    &--expanded {
+      max-height: initial;
+    }
+  }
+}

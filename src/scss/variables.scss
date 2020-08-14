@@ -1,0 +1,56 @@
+// Colors
+
+// color
+$text-primary-color:           #ffffff;
+$primary-text-color:           #212121;
+$secondary-text-color:         #757575;
+
+// background
+$dark-primary-color:           #455a64;
+$default-primary-color:        #607d8b;
+$light-primary-color:          #cfd8dc;
+$accent-color:                 #009688;
+
+// border-color
+$divider-color:                #bdbdbd;
+
+$custom-focus-color:           #2f7cc0;
+
+$color-success:                #5cb75c;
+$color-danger:                 #d8544f;
+$color-warning:                #efac4d;
+
+
+
+// Base typography
+
+$font-size:                    16px;
+$font-size-sm:                 13px;
+$line-height:                  1.5;
+$font-family:                  'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+
+
+
+// Widths
+
+$screen-xs:                    479px;
+$screen-sm:                    767px;
+$screen-md:                    991px;
+$screen-lg:                    1199px;
+$screen-xl:                    1200px;
+
+$container-xs:                 100%;
+$container-sm:                 100%;
+$container-md:                 720px;
+$container-lg:                 960px;
+$container-xl:                 1140px;
+
+// Modular grid
+
+$grid-columns:                 12;
+$grid-gutter-width:            30px;
+
+
+
+$sidebar-width: 320px;
+$sidebar-transition-time: 0.3s;
