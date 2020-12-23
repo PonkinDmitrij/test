@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "test-repo",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PonkinDmitrij/test.git"
@@ -21,6 +23,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.0.5"
   }
 }
