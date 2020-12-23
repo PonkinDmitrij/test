@@ -1,4 +1,4 @@
-import { add } from './add.js';
+import { add } from './js/add.js';
 
 const res = add(2, 4);
 console.log(res);
